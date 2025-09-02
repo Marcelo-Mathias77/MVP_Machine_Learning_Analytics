@@ -15,7 +15,9 @@ O desenvolvimento do projeto seguiu as seguintes etapas:
 
 2. Pré-processamento e Engenharia de Atributos: As colunas categóricas foram codificadas usando OneHotEncoder e as colunas numéricas foram padronizadas com StandardScaler. O dataset foi dividido em conjuntos de treino e teste de forma estratificada para preservar a proporção de classes.
 
-3. Modelagem e Treinamento: Três modelos de classificação foram implementados e avaliados:
+3. Modelagem e Treinamento:
+
+Três modelos de classificação foram implementados e avaliados:
 
 - Regressão Logística (como linha de base)
 
