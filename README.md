@@ -17,11 +17,11 @@ O desenvolvimento do projeto seguiu as seguintes etapas:
 
 3. Modelagem e Treinamento: Três modelos de classificação foram implementados e avaliados:
 
-Regressão Logística (como linha de base)
+- Regressão Logística (como linha de base)
 
-Random Forest Classifier
+- Random Forest Classifier
 
-XGBoost Classifier
+- XGBoost Classifier
 
 4. Otimização de Hiperparâmetros: Foi utilizado o GridSearchCV para otimizar os hiperparâmetros do Random Forest e do XGBoost, buscando maximizar o desempenho dos modelos.
 
