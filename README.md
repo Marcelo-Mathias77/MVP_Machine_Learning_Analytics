@@ -2,7 +2,6 @@
 
 Aluno: Marcelo Chagas Mathias Netto
 
-
 **Projeto de Classificação de Clientes em Campanhas de Marketing Bancário**
 
 **Resumo do Projeto**
