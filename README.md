@@ -1,5 +1,5 @@
-# MVP_Machine_Learning_Analytics
-MVP da Disciplina Machine Learning &amp; Analytics - PUC Rio - aluno: Marcelo Chagas Mathias Netto.
+MVP da Disciplina Machine Learning &amp; Analytics - PUC Rio 
+Aluno: Marcelo Chagas Mathias Netto
 
 **Projeto de Classificação de Clientes em Campanhas de Marketing Bancário**
 
