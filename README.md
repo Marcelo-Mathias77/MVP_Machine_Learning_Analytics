@@ -4,33 +4,50 @@ Aluno: Marcelo Chagas Mathias Netto
 
 **Projeto de Classificação de Clientes em Campanhas de Marketing Bancário**
 
-**Resumo do Projeto**
-Este projeto de Machine Learning tem como objetivo principal construir e avaliar um modelo preditivo capaz de determinar se um cliente de uma instituição bancária irá subscrever um depósito a prazo. Utilizando o dataset Bank Marketing do repositório UCI, o projeto aborda um problema de classificação binária, fornecendo insights valiosos para otimizar futuras campanhas de marketing.
+**Resumo**
+
+Este projeto de Machine Learning tem como objetivo construir e avaliar um modelo capaz de prever se um cliente de um banco irá subscrever um depósito a prazo. Utilizando o dataset Bank Marketing do repositório UCI, o projeto aborda um problema de classificação binária e fornece insights para otimizar futuras campanhas de marketing.
 
 **Metodologia**
 
-O desenvolvimento do projeto seguiu as seguintes etapas:
+O projeto seguiu as seguintes etapas:
 
-1. Carga e Exploração de Dados: O dataset foi carregado, e uma análise exploratória inicial foi realizada para entender a estrutura dos dados, identificar a distribuição das variáveis e, crucialmente, reconhecer o alto desbalanceamento da variável-alvo.
+**Carga e Exploração de Dados**
 
-2. Pré-processamento e Engenharia de Atributos: As colunas categóricas foram codificadas usando OneHotEncoder e as colunas numéricas foram padronizadas com StandardScaler. O dataset foi dividido em conjuntos de treino e teste de forma estratificada para preservar a proporção de classes.
+Carregamento do dataset e análise exploratória para compreender a estrutura, distribuição das variáveis e o desbalanceamento da variável-alvo.
 
-3. Modelagem e Treinamento:
+**Pré-processamento e Engenharia de Atributos**
 
-Três modelos de classificação foram implementados e avaliados:
+Codificação de variáveis categóricas com OneHotEncoder e padronização de variáveis numéricas com StandardScaler.
 
-- Regressão Logística (como linha de base)
+Divisão do dataset em treino e teste de forma estratificada para preservar a proporção das classes.
 
-- Random Forest Classifier
+**Modelagem e Treinamento**
 
-- XGBoost Classifier
+Implementação e avaliação de dois modelos principais:
 
-4. Otimização de Hiperparâmetros: Foi utilizado o GridSearchCV para otimizar os hiperparâmetros do Random Forest e do XGBoost, buscando maximizar o desempenho dos modelos.
+* Regressão Logística (baseline)
 
-5. Avaliação e Análise de Resultados: O desempenho dos modelos foi avaliado usando métricas robustas para datasets desbalanceados, como ROC AUC, F1-Score, Precisão e Recall, em vez de apenas a acurácia.
+* Random Forest Classifier
 
-**Principais Resultados e Conclusão**
+**Criação de pipelines** para garantir reprodutibilidade e aplicação correta das transformações de dados.
 
-A análise de desempenho revelou que o XGBoost Classifier (Otimizado) foi o modelo com a melhor performance geral. Ele obteve a maior pontuação ROC AUC de 0.81 no conjunto de teste, demonstrando uma excelente capacidade de discriminar entre clientes que subscrevem e aqueles que não.
+**Otimização de Hiperparâmetros**
 
-O projeto conclui que é possível prever com alta precisão a conversão de clientes em campanhas de marketing, o que permite que as instituições financeiras direcionem seus esforços para o público com maior probabilidade de sucesso, resultando em maior eficiência e redução de custos.
+Utilização do GridSearchCV para ajustar os hiperparâmetros do Random Forest, visando maximizar o desempenho no conjunto de treino com validação cruzada.
+
+**Avaliação e Análise de Resultados**
+
+Métricas utilizadas: ROC AUC, F1-Score, Precisão e Recall, devido ao desbalanceamento do dataset.
+
+Comparação de desempenho entre modelos padrão e otimizado.
+
+**Principais Resultados**
+
+O Random Forest otimizado apresentou o melhor desempenho, com ROC AUC de 0.9498, equilíbrio entre precisão e recall, e generalização adequada no conjunto de teste.
+
+A variável duration (duração do último contato) foi um preditor muito forte, mas seu uso deve ser cauteloso em cenários de produção, pois só está disponível após a chamada.
+
+**Conclusão**
+
+O projeto demonstra que é possível prever com alta precisão quais clientes têm maior probabilidade de subscrever um depósito a prazo. Isso permite que instituições financeiras direcionem suas campanhas de forma mais eficiente, aumentando a taxa de conversão e reduzindo custos operacionais.
