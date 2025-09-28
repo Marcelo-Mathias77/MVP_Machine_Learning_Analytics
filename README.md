@@ -6,7 +6,7 @@ Aluno: Marcelo Chagas Mathias Netto
 
 **Resumo**
 
-Este projeto de Machine Learning tem como objetivo construir e avaliar um modelo capaz de prever se um cliente de um banco português irá subscrever um depósito a prazo. Utilizando o dataset Bank Marketing do repositório UCI, o projeto aborda um problema de classificação binária e fornece insights para otimizar futuras campanhas de marketing.
+Este projeto de Machine Learning tem como objetivo construir e avaliar um modelo capaz de prever se um cliente de um banco irá subscrever um depósito a prazo. Utilizando o dataset Bank Marketing do repositório UCI, o projeto aborda um problema de classificação binária e fornece insights para otimizar futuras campanhas de marketing.
 
 **Metodologia**
 
